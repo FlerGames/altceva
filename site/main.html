@@ -1,0 +1,324 @@
+<html>
+<head>
+	<title>iForms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app-style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/form-items-style.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]
+	-->
+
+</head>
+<body>
+	<div class="rainbow box-sizing container">
+		<div id="red" class="color red smoth_act"></div>
+		<div id="orange" class="color orange smoth_act"></div>
+		<div id="orange_l" class="color orange_l smoth_act"></div>
+		<div id="yellow" class="color yellow smoth_act"></div>
+		<div id="green" class="color green smoth_act"></div>
+		<div id="green_l" class="color green_l smoth_act"></div>
+		<div id="blue_l" class="color blue_l smoth_act"></div>
+		<div id="blue" class="color blue smoth_act"></div>
+	</div>
+	
+	<!-- Start Main Page -->
+
+	<div id="page">
+
+		<!-- HEADER -->
+
+		<header class="container animated fadeInDown">
+
+			<!-- LOGO -->
+
+			<div id="logo"></div>
+
+			<!-- MAIN MENU -->
+
+			<ul id="main-menu" class="not-selectable">
+				<li class="active"><a href="main.html">Create</a></li>
+				<li><a href="myforms.html">Prifile</a></li>
+				<li><a href="#">Forms</a></li>
+				<li><a href="#">Graphics</a></li>
+				<li><a href="#" onclick="openPopup('register')">Logout</a></li>
+			</ul>
+		</header>
+		
+		<!-- MAIN APPLICATION PAGE -->
+
+		<div class="container">
+			<div id="left-block" class="left animated fadeInRight">
+
+				<!-- LEFT BOX -->
+
+				<div class="content-box left-box">
+					<div class="tools-list">
+						<div id="item-accordion" class="not-selectable">
+							<h1><i class="fa fa-star"></i> Form Tools</h1>
+							<div>
+								<ul>
+									<li class="heading">Heading</li>
+									<li class="textinput">Text Input</li>
+									<li class="textarea">TextArea</li>
+									<li class="radiobuttons">Radio Button</li>
+									<li class="checkbox">Check Box</li>
+									<li class="submitbutton">Submit Button</li>
+								</ul>
+							</div>
+							<h1><i class="fa fa-rocket"></i> Quick Tools</h1>
+							<div>
+								<ul>
+									<li class="heading">Heading</li>
+									<li class="textinput">Text Input</li>
+									<li class="textarea">TextArea</li>
+									<li class="radiobuttons">Radio Button</li>
+									<li class="checkbox">Check Box</li>
+									<li class="submitbutton">Submit Button</li>
+								</ul>
+							</div>
+							<h1><i class="fa fa-bar-chart-o"></i> Graphics</h1>
+							<div>
+								<ul>
+									<li class="heading">Heading</li>
+									<li class="textinput">Text Input</li>
+									<li class="textarea">TextArea</li>
+									<li class="radiobuttons">Radio Button</li>
+									<li class="checkbox">Check Box</li>
+									<li class="submitbutton">Submit Button</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- COPYRIGHT TEXT -->
+
+				<p class="copyright">Copyright iForms 2014</p>
+
+			</div>
+			<div id="center-block" class="left">
+				<div class="content-box center-box">
+
+					<!-- RED FORM MENU -->
+
+					<div class="form-menu">
+						<p class="left saving-status-msg animated fadeInLeft"><i class="fa fa-refresh fa-spin"></i> Saving...</p>
+						<ul class="right form-menu-list not-selectable">
+							<li><i class="fa fa-desktop"></i> Preview</li>
+							<li><i class="fa fa-gears"></i> Settings</li>
+							<li><i class="fa fa-cloud-upload"></i> Integrate</li>
+							<li id="save-form-btn"><i class="fa fa-save"></i> Save</li>
+						</ul>
+					</div>
+
+					<!-- FORM ITEMS LIST -->
+
+					<div class="form-creator-table box-sizing">
+						
+						<!-- FORM ITEM -->
+
+						<div class="form-item heading">
+							<input class="tipa-text" type="text" value="Heading here" placeholder="Heading here" autofocus>					
+						</div>
+
+						<!-- FORM ITEM -->
+
+						<div class="container form-item textinput">
+							<div class="o-patrime left">
+								<textarea class="tipa-text" placeholder="Input name" onkeyup="resizeTexarea(this)" autofocus>Input name</textarea>
+							</div>	
+							<div class="doua-treimi left box-sizing">
+								<input class="input-element" value="Text Input" disabled>
+								<input class="tipa-text sub-label" type="text" placeholder="Some value here">
+							</div>				
+						</div>
+
+						<!-- FORM ITEM -->
+
+						<div class="container form-item textarea">
+							<div class="o-patrime left">
+								<textarea class="tipa-text" placeholder="Input name" autofocus>Input name</textarea>
+							</div>	
+							<div class="doua-treimi left box-sizing">
+								<textarea class="textarea-element" disabled>Text Area</textarea>
+								<input class="tipa-text sub-label" type="text" placeholder="Some value here">
+							</div>				
+						</div>
+
+					</div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+			<div id="right-block" class="left animated fadeInLeft">
+
+				<!-- RIGHT BOX -->
+
+				<div class="content-box right-box">
+					<h1>Item Properties</h1>
+					<div id="prop-accordion">
+						<h3 class="not-selectable"><i class="fa fa-font"></i> Title</h3>
+						<div class="prop-item">
+							<input type="text" value="Input Name" placeholder="Some Value">
+						</div>
+						<h3><i class="fa fa-text-height"></i> Size</h3>
+						<div class="prop-item">
+							<div class="number-selector not-selectable">
+								<input type="text" value="12" placeholder="0">
+								<div class="input-controls">
+									<i class="fa fa-plus-square-o"></i>
+									<i class="fa fa-minus-square-o"></i>
+								</div>
+							</div>
+						</div>
+						<h3 class="not-selectable"><i class="fa fa-check-square-o"></i> Validation</h3>
+						<div class="prop-item">
+							<div class="checkbox">
+								<label>	<input type="checkbox" value=""> AlphaNumeric </label>
+							</div>
+							<div class="checkbox">
+								<label>	<input type="checkbox" value=""> Only Numbers </label>
+							</div>
+							<div class="checkbox">
+								<label>	<input type="checkbox" value=""> Only Letters </label>
+							</div>
+							<div class="checkbox">
+								<label>	<input type="checkbox" value=""> Other Shit </label>
+							</div>
+						</div>
+						<h3 class="not-selectable"><i class="fa fa-align-center"></i> Text Align</h3>
+						<div class="prop-item">
+							<div class="radio">
+								<label>
+									<input name="text-align-radio" type="radio" id="text-align-left" value="left" checked>
+									<i class="fa fa-align-left"></i> Left
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input name="text-align-radio" type="radio" id="text-align-center" value="center">
+									<i class="fa fa-align-center"></i> Center
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input name="text-align-radio" type="radio" id="text-align-right" value="right">
+									<i class="fa fa-align-right"></i> Right
+								</label>
+							</div>
+						</div>
+						<h3 class="not-selectable"><i class="fa fa-asterisk"></i> Required</h3>
+						<div class="prop-item">
+							<div class="radio">
+								<label>
+									<input name="required-radio" type="radio" id="required-true" value="true" checked>
+									True
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input name="required-radio" type="radio" id="required-false" value="false">
+									False
+								</label>
+							</div>
+						</div>
+						<h3 class="not-selectable"><i class="fa fa-bookmark"></i> Sub Label</h3>
+						<div class="prop-item">
+							<input type="text" value="Sub Lebel" placeholder="Some Value">
+						</div>
+					</div>
+				</div>
+
+				<!-- FOOTER LINKS -->
+
+				<p class="footer-links">
+					<a href="#">About</a>
+					<span>•</span>
+					<a href="#">Terms</a>
+					<span>•</span>
+					<a href="#">Documentation</a>
+				</p>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- OVERLAY -->
+
+	<div class="overlay animated fadeIn"></div>
+
+	<!-- LOGIN POPUP -->
+
+	<div id="register-popup-window" class="popup-item box-sizing animated flipInY">
+
+		<div class="popup-header">Register here <span>FOR FREE</span></div>
+		<form id="register-form">
+			<div class="input-group">
+				<i class="fa fa-user i-con"></i>
+				<input class="box-sizing" type="text" placeholder="Username">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-envelope i-con"></i>
+				<input class="box-sizing" type="email" placeholder="Email">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock i-con"></i>
+				<input class="box-sizing" type="password" placeholder="New Password">
+			</div>
+			<div class="input-group">
+			    <label>
+			      <input type="checkbox"> Remember me
+			    </label>
+			</div>
+			<div class="block-btns">
+				<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+				<button type="button" class="btn submit-btn">Submit</button>
+				<span>OR</span>
+				<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+				<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+				<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+			</div>
+			<p>already registered? <span id="show-login-popup">Login</span></p>
+		</form>
+	</div>
+	<div id="login-popup-window" class="popup-item box-sizing animated flipInY">
+		<div class="popup-header"><i class="fa fa-rocket"></i> START BE <span>AWESOME</span></div>
+		<form id="register-form">
+			<div class="input-group">
+				<i class="fa fa-user i-con"></i>
+				<input class="box-sizing" type="text" placeholder="Username">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock i-con"></i>
+				<input class="box-sizing" type="password" placeholder="Password">
+			</div>
+			<div class="input-group">
+			    <label>
+			      <input type="checkbox"> Remember me
+			    </label>
+			</div>
+			<div class="block-btns">
+				<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+				<button type="button" class="btn submit-btn">Submit</button>
+				<span>OR</span>
+				<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+				<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+				<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+			</div>
+			<p>Don't have an account? <span id="show-register-popup">Register</span></p>
+		</form>
+	</div>
+
+	<!-- FOOTER JAVASCRIPT -->
+
+	<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

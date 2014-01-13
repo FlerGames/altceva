@@ -1,0 +1,25 @@
+.container{
+	overflow: hidden;
+}
+.o-patrime{
+	width: 25%;
+}
+.o-doime{
+	width: 50%;
+}
+.o-treime{
+	width: 25%;
+}
+.doua-treimi{
+	width: 75%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+#page{
+	width: 1200px;
+	min-height: 150px;
+}

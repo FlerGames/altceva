@@ -1,0 +1,46 @@
+.form-item input{
+	color: #464545;
+}
+.form-item {
+	margin: 11px 0;
+	padding: 11px 0;
+}
+.form-item:hover {
+	background: #FAFAFA;
+}
+.form-item.heading input{
+	font-size: 30px
+}
+textarea.tipa-text{
+	resize: none;
+	overflow:hidden;
+}
+.tipa-text{
+	border: 0;
+	background: rgba(255, 255, 255, 0);
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+.tipa-text.sub-label{
+	text-align: left;
+	font-size: 12px;
+}
+.input-element{
+	width: 100%;
+	background: #F3F3F3;
+	border: 1px solid #CECECE;
+	height: 25px;
+	padding-left: 5px;
+}
+.textarea-element{
+	width: 100%;
+	background: #F3F3F3;
+	border: 1px solid #CECECE;
+	resize: none;
+	padding: 5px;
+}
+.form-item .doua-treimi.left {
+	padding-left: 30px;
+	padding-right: 8px;
+}

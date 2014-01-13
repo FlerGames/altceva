@@ -1,0 +1,280 @@
+<html>
+<head>
+	<title>iForms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app-style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/form-items-style.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]
+	-->
+
+</head>
+<body>
+	<div class="rainbow box-sizing container">
+		<div id="red" class="color red smoth_act"></div>
+		<div id="orange" class="color orange smoth_act"></div>
+		<div id="orange_l" class="color orange_l smoth_act"></div>
+		<div id="yellow" class="color yellow smoth_act"></div>
+		<div id="green" class="color green smoth_act"></div>
+		<div id="green_l" class="color green_l smoth_act"></div>
+		<div id="blue_l" class="color blue_l smoth_act"></div>
+		<div id="blue" class="color blue smoth_act"></div>
+	</div>
+	<!-- Start Main Page -->
+
+	<div id="page">
+
+		<!-- HEADER -->
+
+		<header class="container animated fadeInDown">
+
+			<!-- LOGO -->
+
+			<div id="logo"></div>
+
+			<!-- MAIN MENU -->
+
+			<ul id="main-menu" class="not-selectable">
+				<li><a href="main.html">Create</a></li>
+				<li class="active"><a href="myforms.html">Prifile</a></li>
+				<li><a href="#">Forms</a></li>
+				<li><a href="#">Graphics</a></li>
+				<li><a href="#" onclick="openPopup('register')">Logout</a></li>
+			</ul>
+		</header>
+		
+		<!-- MAIN APPLICATION PAGE -->
+
+		<div class="container">
+			<div id="left-block" class="left animated fadeInRight">
+
+				<!-- LEFT BOX -->
+
+				<div class="content-box left-box">
+					<div class="folder-list">
+						<div class="not-selectable">
+							<h1><i class="fa fa-folder"></i> My Folders</h1>
+							<div>
+								<ul>
+									<li><i class="fa fa-folder"></i> Folder 1</li>
+									<li><i class="fa fa-folder"></i> School</li>
+									<li class="selected-folder"><i class="fa fa-folder"></i> Work</li>
+									<li><i class="fa fa-folder"></i> Hobby</li>
+									<li><i class="fa fa-folder"></i> New Folder</li>
+								</ul>
+							</div>
+							<h1><i class="fa fa-star"></i> Favorites</h1>
+						</div>
+					</div>
+				</div>
+
+				<!-- FOOTER LINKS -->
+
+				<p class="footer-links">
+					<a href="#">About</a>
+					<span>•</span>
+					<a href="#">Terms</a>
+					<span>•</span>
+					<a href="#">Documentation</a>
+				</p>
+
+				<!-- COPYRIGHT TEXT -->
+
+				<p class="copyright">Copyright iForms 2014</p>
+
+			</div>
+			<div id="center-block-full" class="left">
+				<div class="content-box center-box">
+
+					<!-- RED FORM MENU -->
+
+					<div class="form-menu">
+						<div class="left">
+							<button class="btn btn-howtoview"><i class="fa fa-align-justify left"></i></button>
+							<button class="btn btn-howtoview"><i class="fa fa-th left"></i></button>
+						</div>
+						<div class="right">
+							<div id="search-box" class="container">
+								<input class="left" type="text" placeholder="Search here...">
+								<div class="search-button right"> <i class="fa fa-search"></i> </div>
+							</div>
+						</div>
+					</div>
+
+					<!-- FORM ITEMS LIST -->
+
+					<div class="my-forms-list list-view box-sizing">
+						
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left"></i>
+							<div class="left">
+								<h1>Form Item Name 1</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left"></i>
+							<div class="left">
+								<h1>Form Item Name 2</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left selected-star"></i>
+							<div class="left">
+								<h1>Form Item Name 3</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left selected-star"></i>
+							<div class="left">
+								<h1>Form Item Name 3</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left selected-star"></i>
+							<div class="left">
+								<h1>Form Item Name 3</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+					<div class="personal-item containter not-selectable">
+						<div class="left item-details container">
+							<i class="fa fa-star left selected-star"></i>
+							<div class="left">
+								<h1>Form Item Name 3</h1>
+								<span>Created on 23 Nov 2013</span>
+							</div>
+						</div>
+						<div class="right item-options">
+							<i class="fa fa-inbox"></i>
+							<span>Inbox (123)</span>
+							<i class="fa fa-cog opt-btn"></i>
+						</div>
+					</div>
+
+					</div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<!-- OVERLAY -->
+
+	<div class="overlay animated fadeIn"></div>
+
+	<!-- LOGIN POPUP -->
+
+	<div id="register-popup-window" class="popup-item box-sizing animated flipInY">
+
+		<div class="popup-header">Register here <span>FOR FREE</span></div>
+		<form id="register-form">
+			<div class="input-group">
+				<i class="fa fa-user i-con"></i>
+				<input class="box-sizing" type="text" placeholder="Username">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-envelope i-con"></i>
+				<input class="box-sizing" type="email" placeholder="Email">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock i-con"></i>
+				<input class="box-sizing" type="password" placeholder="New Password">
+			</div>
+			<div class="input-group">
+			    <label>
+			      <input type="checkbox"> Remember me
+			    </label>
+			</div>
+			<div class="block-btns">
+				<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+				<button type="button" class="btn submit-btn">Submit</button>
+				<span>OR</span>
+				<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+				<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+				<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+			</div>
+			<p>already registered? <span id="show-login-popup">Login</span></p>
+		</form>
+	</div>
+	<div id="login-popup-window" class="popup-item box-sizing animated flipInY">
+		<div class="popup-header"><i class="fa fa-rocket"></i> START BE <span>AWESOME</span></div>
+		<form id="register-form">
+			<div class="input-group">
+				<i class="fa fa-user i-con"></i>
+				<input class="box-sizing" type="text" placeholder="Username">
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock i-con"></i>
+				<input class="box-sizing" type="password" placeholder="Password">
+			</div>
+			<div class="input-group">
+			    <label>
+			      <input type="checkbox"> Remember me
+			    </label>
+			</div>
+			<div class="block-btns">
+				<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+				<button type="button" class="btn submit-btn">Submit</button>
+				<span>OR</span>
+				<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+				<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+				<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+			</div>
+			<p>Don't have an account? <span id="show-register-popup">Register</span></p>
+		</form>
+	</div>
+
+	<!-- FOOTER JAVASCRIPT -->
+
+	<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

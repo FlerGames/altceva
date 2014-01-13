@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>iForms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/login-page.css">
+	
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+<body>
+	<div class="rainbow box-sizing container">
+		<div id="red" class="color red smoth_act"></div>
+		<div id="orange" class="color orange smoth_act"></div>
+		<div id="orange_l" class="color orange_l smoth_act"></div>
+		<div id="yellow" class="color yellow smoth_act"></div>
+		<div id="green" class="color green smoth_act"></div>
+		<div id="green_l" class="color green_l smoth_act"></div>
+		<div id="blue_l" class="color blue_l smoth_act"></div>
+		<div id="blue" class="color blue smoth_act"></div>
+	</div>
+	
+	<!-- START LOGIN PAGE -->
+
+	<div id="page" class="login-page">
+
+		<!-- HEADER -->
+
+		<header class="animated fadeIn">
+			<div id="logo"></div>
+			<span>Fast, Simple, Free</span>
+		</header>
+	
+		<!-- PAGE CONTENT -->
+
+		<div class="container">
+
+			<!-- SLIDER / GIF IMAGE PRESENTATION -->
+
+			<div class="slider-box">
+				<div class="slider animated fadeInLeft">
+					<a href="main.html"><img src="assets/img/slider1.png" alt=""></a>
+				</div>
+			</div>
+
+			<!-- LOGIN BOX (hidden) -->
+
+			<div id="login-box">
+				<h3><i class="fa fa-rocket"></i> START BE <span class="evidentiat">AWESOME</span></h3>
+				<form id="register-form">
+					<div class="input-group">
+						<i class="fa fa-user i-con"></i>
+						<input class="box-sizing" type="text" placeholder="Username">
+					</div>
+					<div class="input-group">
+						<i class="fa fa-lock i-con"></i>
+						<input class="box-sizing" type="password" placeholder="Password">
+					</div>
+					<div class="input-group">
+					    <label>
+					      <input type="checkbox"> Remember me
+					    </label>
+					</div>
+					<div class="block-btns">
+						<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+						<button type="button" class="btn submit-btn">Submit</button>
+						<span>OR</span>
+						<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+						<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+						<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+					</div>
+					<p>Don't have an account? <span id="goto-register-link" class="evidentiat">Register</span></p>
+				</form>
+			</div>
+
+			<!-- REGISTER BOX -->
+
+			<div id="register-box" class=" animated fadeInRight">
+				<h3>REGISTER HERE <span class="evidentiat">FOR FREE</span></h3>
+				<form id="register-form">
+					<div class="input-group">
+						<i class="fa fa-user i-con"></i>
+						<input class="box-sizing" type="text" placeholder="Username">
+					</div>
+					<div class="input-group">
+						<i class="fa fa-envelope i-con"></i>
+						<input class="box-sizing" type="email" placeholder="Email">
+					</div>
+					<div class="input-group">
+						<i class="fa fa-lock i-con"></i>
+						<input class="box-sizing" type="password" placeholder="New Password">
+					</div>
+					<div class="input-group">
+					    <label>
+					      <input type="checkbox"> Remember me
+					    </label>
+					</div>
+					<div class="block-btns">
+						<p class="submit-status-message"><i class="fa fa-spinner fa-spin"></i> Loading...</p>
+						<button type="button" class="btn submit-btn">Submit</button>
+						<span>OR</span>
+						<button type="button" class="btn btn-icon fb"><i class="fa fa-facebook"></i></button>
+						<button type="button" class="btn btn-icon tw"><i class="fa fa-twitter"></i></button>
+						<button type="button" class="btn btn-icon gp"><i class="fa fa-google-plus"></i></button>
+					</div>
+					<p>already registered? <span id="goto-login-link" class="evidentiat">Login</span></p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER JAVASCRIPT -->
+
+	<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
